@@ -25,7 +25,7 @@ require('./drivers/mongodb');
 app.use('/api', routes);
 
 //start the express listener on our desired port
-app.listen(port, () => {
-    console.info(`Started server on port ${port}`);
-  }); 
+app.listen(3000, '0.0.0.0', () => {
+  console.log('Server running on port 3000');
+}); 
 
